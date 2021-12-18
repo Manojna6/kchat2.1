@@ -17,7 +17,7 @@ function draw() {
         console.log(objects);
         for (let i = 0; i < objects.length; i++) {
             const element = objects[i];
-            rect(element.x,element.y,element.height,element.width);
+            rect(element.x,element.y,element.width,element.height);
             noFill();
             text(element.label,element.x + 3,element.y + 15);
             percent = floor(element.confidence * 100)
